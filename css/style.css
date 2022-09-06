@@ -1,0 +1,40 @@
+body{
+    background-color: #aaa;
+}
+
+.global{
+    font-family: 'Poppins', sans-serif;
+}
+
+.banner img{
+    width: 100%;
+    height: 70vh;
+    filter: brightness(50%);
+}
+
+.description{
+    position: absolute;
+    top: 35%;
+    left: 26%;
+    text-align: center;
+    color: #aaa;
+}
+
+.description:hover{
+    text-shadow: 0 0 4px #000;
+}
+
+.card{
+    margin-top: 12px;
+}
+
+.pokemonImage{
+    position: absolute;
+    top: 30%;
+    left: 30%;
+}
+
+.pokemonName{
+    color: #3a444d;
+    text-transform: capitalize;
+}
