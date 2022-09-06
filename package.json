@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/LiL-14/PokePedia/issues"
   },
-  "homepage": "https://github.com/LiL-14/PokePedia#readme"
+  "homepage": "https://github.com/LiL-14/PokePedia#readme",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "cors": "^2.8.5",
+    "exppress": "0.0.1-security"
+  }
 }
