@@ -30,11 +30,24 @@ body{
 
 .pokemonImage{
     position: absolute;
-    top: 30%;
+    top: 20%;
     left: 30%;
 }
 
 .pokemonName{
     color: #3a444d;
     text-transform: capitalize;
+}
+
+.listaPokemon{
+    gap: 10%;
+}
+
+.card{
+    margin-top: 24px;
+}
+
+.paginacao{
+    display: flex;
+    justify-content: center;
 }

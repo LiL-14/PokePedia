@@ -9,29 +9,30 @@ const fetchPokemon = () => {
 
     Promise.all(pokemonPromisses)
     .then(pokemons =>{
-        console.log(pokemons);
         const lisPokemons = pokemons.reduce((accumulator, pokemon) =>{
             accumulator += ` 
-            <div class="container">
+            
                 <div class="card" style="width: 18rem;">
                 <img src="../Images/bgCard.jfif" class="card-img-top" alt="...">
-                <img src="#" alt="pokemon" class="pokemonImage">
-
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.id}.png" alt="pokemon" class="pokemonImage">
                 <div class="card-body">
                     <h5 class="card-title pokemonName">${pokemon.name}</h5>
-                    <p class="card-text pokemonNumber">${pokemon.id}</p>
                 </div>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Type:</li>
+                        <li class="list-group-item pokemonNumber">Numero da pokedex: ${pokemon.id}</li>
+                        <li class="list-group-item">Type: ${pokemon.stats}</li>
                         <li class="list-group-item">A second item</li>
                     </ul>
                 </div>
-            </div>
+        
             `
 
             return accumulator
         }, "")
-        console.log(lisPokemons);
+
+        const div = document.querySelector('[data-js="pokedex"]')
+
+        div.innerHTML = lisPokemons
     })
 }
 
