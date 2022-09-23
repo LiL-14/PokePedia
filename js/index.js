@@ -20,8 +20,8 @@ const fetchPokemon = () => {
                 </div>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item pokemonNumber">Numero da pokedex: ${pokemon.id}</li>
-                        <li class="list-group-item">Type: ${pokemon.stats}</li>
-                        <li class="list-group-item">A second item</li>
+                        <li class="list-group-item">Type: ${pokemon.types.map(item => item.type.name).toString()}</li>
+                        <li class="list-group-item">${pokemon.generation}</li>
                     </ul>
                 </div>
         
